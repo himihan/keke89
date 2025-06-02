@@ -1,0 +1,421 @@
+body {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.first {
+    display: flex;
+    font-size: 10px;
+    background-color: rgb(230, 233, 243);
+    margin: 0 auto;
+    width: 1100px;
+    left: 0;
+}
+
+.first img {
+    width: 15px;
+    height: 15px;
+}
+
+.second {
+    display: flex;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100px;
+    position: relative;
+}
+
+.second>img {
+    width: 142px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.second .sub-menu1 {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.second .sub-menu1 .sub-item {
+    display: block;
+    justify-content: CENTER;
+    font-size: 15px;
+    padding: 0 20px 0 20px;
+    position: relative;
+    width: auto;
+    left: 0;
+    z-index: 2;
+    border-radius: 10px;
+
+}
+
+.second .sub-menu1 .sub-item:hover {
+    background-color: rgb(230, 233, 243);
+
+}
+
+.second .sub-menu1 {
+    list-style-type: none;
+}
+
+
+
+.second .sub-menu1 .sub-item img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+
+}
+
+.second .sub-menu1 .sub-item .content-name>a {
+    display: flex;
+}
+
+.second .sub-menu1 .sub-item .content-name>a>img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: 3px;
+}
+
+
+.second .sub-menu1 .sub-item ul {
+    display: none;
+    list-style-type: none;
+
+    padding-left: 0;
+    margin: 0;
+
+}
+
+.second .sub-menu1 .sub-item ul li {
+    margin: 10px;
+}
+
+.second .sub-menu1 .sub-item:hover>ul {
+    display: block;
+}
+
+.sub-menu2 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    gap: 30px
+}
+
+.sub-menu2 .item {
+    font-size: 15;
+    font-weight: 500;
+    width: 100px;
+    display: flex;
+    right: 0;
+    top: 50px;
+}
+
+.sub-menu2 .item:nth-child(2) {
+    width: 80px;
+
+}
+
+.sub-menu2 .item img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-right: 2px;
+}
+
+
+
+.main-menu {
+    width: 1100px;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px 0 0 0;
+    padding: 0;
+    font-size: 20px;
+    gap: 90px;
+    z-index: 1;
+}
+
+.main-menu .item {
+    list-style-type: none;
+    border-radius: 10px;
+
+
+}
+
+.main-menu .item .item__name {
+}
+
+.main-menu .item .contents__menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    margin-right: 100px;
+}
+
+.main-menu .item:hover {
+    background-color: rgb(230, 233, 243);
+
+}
+
+
+.main-menu .item:hover .contents__menu {
+    display: block;
+}
+
+.main-menu .item .contents__menu .inner {
+    width: 900px;
+    height: 400px;
+    background-color: white;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+
+
+}
+
+.main-menu .item .contents__menu .inner>ul {
+    padding: 0;
+    margin-right: 30px;
+    width: 200px;
+    list-style-type: none;
+
+}
+
+.main-menu .item .contents__menu .inner>li {
+    font-size: 15px;
+    display: flex;
+    height: auto;
+    width: 200px;
+    margin-right: 20px;
+    border-top: 1px solid rgb(209, 212, 221);
+    margin-top: 20px;
+}
+
+.main-menu .item .contents__menu .inner li {
+list-style-type: none;
+}
+
+
+hr {
+    position: absolute;
+    left: 0;
+}
+
+.section1 {
+    display: flex;
+}
+
+.section1 img {
+    margin-top: 30px;
+
+}
+
+.section1 .container1 {
+    width: 840px;
+    position: relative;
+}
+
+.section1 .container1 .search {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.section1 .container1 .search .search1 {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.section1 .container1 .search .list {
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 0 30px 0 15px;
+    padding: 20px 15px 20px -45px;
+}
+
+.section1 .container1 .search>input {
+    width: 60%;
+    height: 61px;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 0 0 0 20px;
+    position: absolute;
+    right: 0;
+    background-image: url(./image/search_40dp_000000_FILL0_wght400_GRAD0_opsz40.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.section1 .container2 {
+    height: 390px;
+    right: 0;
+    border: 1px solid rgb(230, 233, 243);
+    margin: 30px 30px 30px 15px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.section1 .container2>img {
+    width: 200px;
+    padding: 30px 20px 0 20px;
+}
+
+.section1 .container2 .login {
+    background-color: RGB(51, 130, 233);
+    margin: 10px 20px 10px 20px;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.section1 .container2 .join {
+    display: flex;
+    margin: 10px 20px 10px 20px;
+    position: relative;
+}
+
+.section1 .container2 .join .join1 {
+    position: absolute;
+    right: 0;
+}
+
+.section2 {
+    display: ;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.section2 .container3 {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.section2 .container3 .service1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.section2 .container3 .service2 {
+    display: flex;
+    position: absolute;
+    right: 0;
+    gap: 10px;
+
+}
+
+.section2 .container3 .service2 .service2_1 {
+    display: flex;
+}
+
+.section2 .container4 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 .container4 .apps {
+    width: 136px;
+    height: 140px;
+    margin: 0 5px 0 5px;
+    background-color: rgb(230, 233, 243);
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+
+
+}
+
+.section2 .container4 .apps .apps1 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .container4 .apps .apps1 .circle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 153, 115);
+    color: white;
+    border-radius: 50%;
+}
+
+.section2 .container4 .apps .apps2 .circle2 {
+    margin: 0 1px 0 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section2 .container4 .apps:hover {
+    border: 3px solid rgb(0, 153, 115);
+}
+
+.section2 .container4 .apps:nth-child(6):hover {
+    border: 3px solid rgb(255, 51, 136);
+}
+
+
+.section2 .container4 .apps .apps3 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .container4 .apps:nth-child(6) .apps1 .circle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 51, 136);
+    color: white;
+    border-radius: 50%;
+
+}
+
+.section2 .container4 .apps .circle2 {
+    display: flex;
+    height: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
